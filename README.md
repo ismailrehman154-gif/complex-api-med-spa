@@ -20,3 +20,19 @@ I completed the challenge: 5
 I feel good about my code: 4
 I'm not sure if my constructors are setup cleanly...
 ```
+
+
+
+
+
+fetch(' https://api.openuv.io/api/v1/uv?lat=:lat&lng=:lng&alt=:alt&dt=:dt', {
+    headers: {
+        'x-api-key': 'openuv-9gis2ihrmuhs9bz1-io'
+    }
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data)
+})
+
+
